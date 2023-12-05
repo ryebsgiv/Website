@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="buttonScript.js" defer></script>
+</head>
+<body>
+    <section id="introPage">
+        <div class="nameBanner"> Benjamin Givens</div>
+        <div class="options">
+            <button class="gridItem" onmouseover="flipColors()" onclick="resume()">Resume</button>
+            <div class="dot"></div>
+            <button class="gridItem" onmouseover="flipColors()" onclick="navigateToSection('aboutMe')">About Me</button>
+            <div class="dot"></div>
+            <button class="gridItem" onmouseover="flipColors()" onclick="navigateToSection('projects')">Projects</button>
+            <div class="dot"></div>
+            <button class="gridItem" onmouseover="flipColors()" onclick="navigateToSection('contact')">Contact</button>
+        </div>
+        <div class="curvyLine"></div>
+    </section>
+    <section id="aboutMe">
+        <div class="Banner">
+            Who I am
+        </div>
+        <div class="card">
+            <div class="textAbout">
+                
+Hello there! I'm Benjamin Givens, an enthusiastic software developer based in Coeur d'Alene, Idaho. Armed with a degree in computer science, I bring a solid foundation of knowledge and a good attitude to everything I do.
+My proudest achievement is attaining the rank of Eagle Scout. The invaluable training and experiences from scouting have played a pivotal role in shaping the person I am today.
+
+            </div>
+            <div class=picture>
+    
+                <img src="coverpicture1.JPG" alt="Description of the image" height="100%" width="100%">
+            </div>
+        </div>
+    </section>
+    <section id="projects">
+        <div class="Banner">
+            Projects
+        </div>   
+        <div class="description">
+            These are some of my favorite projects I have had an opportunity to work on. Firstly, the battleship game I made from scratch with my team.
+            <button class="gridItem" id="descriptionButton" onmouseover="flipColors()" onclick="battleShipButton()">Battleship</button>
+          </div>
+        <img src="battleship.png" alt="Battleship" width="85%" height="40%">  
+        <div class="description">
+            This is a string parser that I created to tokenize items in C.
+            <button class="gridItem" id="descriptionButton" onmouseover="flipColors()" onclick="parserButton()" value="https://github.com/ryebsgiv/Portfolio/blob/main/README.md">Lexer</button>
+          </div>
+        <img src="pa1.png" alt="Lexer" width="85%" height="40%">    
+        <div class="description">
+           This is a tail function that I have implemented using system commands in C.
+            <button class="gridItem" id="descriptionButton" onmouseover="flipColors()" onclick="portfolioButton()" value="https://github.com/ryebsgiv/Portfolio/blob/main/README.md">Tail Command</button>
+          </div>
+        <img src="pa3.png" alt="Tail Command" width="85%" height="40%">      
+    </section>
+    <section id="contact">
+        <div class="Banner" id="contactBanner">
+            Contact Me
+        </div>
+        <div class="contactMeOptions">
+            <div class="info">
+            X | @bsgivens
+            </div>
+            <div class="info">
+            Phone | (208) 770-0335
+            </div>
+            <div class="info">
+            Email | ben.s.givens@gmail.com
+            </div>
+         </div>
+    </section>
+</body>
+</html>
